@@ -1,0 +1,336 @@
+/* 
+Since this is a very simple app, all styles are in this file.
+SCSS or LESS is not used 
+*/
+
+/* Utility Classes */
+
+.ht-pct-100 {
+  height: 100%
+}
+
+.fs-sm {
+  font-size: 12px;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-center {
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.th-a {
+  text-shadow: 0 0 11px #3603fc, 0 0 5px #560cff;
+  color: aqua
+}
+
+.th-b {
+  text-shadow: 0 0 11px #6786df, 0 0 5px #ffc2bb;
+  color: #b3ff23;
+}
+
+.sg-c {
+  text-align: -webkit-center;
+}
+
+/* Tag Override */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General Classes */
+
+.nav-header {
+  background-image: linear-gradient(to right, #141E30 , #243B55);
+  height: 75px;
+  color: white;
+  box-shadow: -20px -2px 14px 11px #07031ac7;
+}
+
+.footer {    
+  background-image: linear-gradient(to right, #141E30 , #243B55);
+  color: #c7c7c7;
+  font-size: 16px;
+  box-shadow: -20px -2px 14px 11px #07031ac7;
+}
+
+.fs-head {
+  font-family: 'Saira Stencil One', cursive;
+}
+
+.header {
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 35px;
+  color: #a8f9f9;
+}
+
+.selected {
+  background: rgba(250, 187, 142, 0.726);
+}
+
+.wordament {
+  box-shadow: 0 0 7px 5px #090b29a3;
+}
+
+.selection-btn {
+  height: 65px;
+  width: 300px;
+  background-image: linear-gradient(to right, #655e978a , #6d2e2ec7);
+  font-size: 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin: 0px 10px;
+}
+
+
+.selection-btn:hover {
+  transition: all 0.2s ease-in-out; 
+  background-image: linear-gradient(to right, #3440e480 , #f301019d);
+  height: 65px;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.527);
+  margin: 0px 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px #caccffb0;
+  font-weight: bold;
+}
+
+.selected-btn {
+  background-image: linear-gradient(to right, #f46b45 , #eea849);
+  cursor: pointer;
+}
+.selected-btn:hover {
+  background-image: linear-gradient(to right, #f46b45 , #eea849);
+  box-shadow: 0px 0px 20px 0px #caccffb0;
+  cursor: pointer;
+}
+
+.gameover {
+  text-align: center;
+  opacity: 0.8;
+  padding: 5px 299px;
+  width: -8px;
+}
+
+.final-score {
+  text-align: center;
+  background: #00f1ff85;
+  padding: 20px;
+  width: 400px;
+  font-size: 45px;
+  border-radius: 20px;
+}
+
+.rocky-bg {
+  position: relative;
+  margin: auto;
+  padding: 5px;
+  width: 300px;
+  border-radius: 14px;
+  box-shadow: 0px 0px 18px 5px #810000;
+  background-image: url("./assets/rocky.jpg");
+}
+
+.name{
+  color: #82beff !important;
+  font-size: 18pt;
+}
+
+.table {
+  opacity: 0.8;
+  box-shadow: 0px 0px 17px 11px #000000;
+  border-radius: 8px;
+  width: 96%;
+  margin-bottom: 1rem;
+  color: #212529;
+  margin: 10px;
+}
+
+.table-body{
+  text-shadow: 1px 0px 20px #ffffff;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("./assets/tbody.jpg");
+  min-height: 215px;
+  max-height: 215px;
+  overflow: auto;
+  opacity: 0.9;
+}
+
+.table-head {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("./assets/redtexture.jpg");
+  min-height: 35px;
+  max-height: 35px;
+  padding-top: 3px;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 75px;
+  pointer-events: none;
+}
+
+.main {
+  background-image: url("./assets/bluetiles.jpg");
+  height: calc(100vh - 150px);
+  color: white;
+  padding: 5px 40px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scoreboard {
+  font-size: 20pt;
+  font-family: 'Saira Stencil One', cursive;
+  margin: 15pt auto;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.progress-bar {
+  background-color: #1b00ff40;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.table td, .table th {
+  border: unset;
+  padding: 6px 15px;
+}
+
+.button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.play-center {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.table-col1 {
+  width: 450px;
+  padding-left: 30px;
+}
+
+.mode-text {
+  font-size: 11px;
+  width: 142px;
+  text-shadow: 0 0 12px #000000;
+  color: #fdffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* buttons */
+
+.play {
+  padding: 0px;
+  border: unset;
+  margin-top: 15px;
+  box-shadow: 0 0 6px #0c0051;
+}
+
+.play:hover , .glow:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(208, 255, 208, 0.74);
+  -moz-box-shadow:    0px 0px 30px 0px rgba(245, 239, 255, 0.795);
+  box-shadow: 0px 0px 15px 10px rgba(190, 191, 255, 0.78);
+
+}
+
+/* Tiles */
+
+.tile {    
+  position: relative;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: chocolate;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.tile4 {
+  height: 90px;
+  width: 90px;
+  font-size: 50px;
+}
+
+.tile5 {
+  height: 75px;
+  width: 75px;
+  font-size: 45px;
+}
+
+.tile6 {
+  height: 60px;
+  width: 60px;
+  font-size: 35px;
+}
+
+.selected {
+  background: rgb(250, 187, 142);
+}
+
+.possible:hover {
+  background: #f9aa33
+}
+
+.error {
+  background: red;
+}
+
+.correct {
+  background: green;
+}
+
+.score {    
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
