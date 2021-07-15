@@ -20,7 +20,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageSelected: 'gameOver',
+      pageSelected: 'home',
       mode: "classic", // modes -> classic,scramble,jumparound
       time: 1,
       grid: 4,
