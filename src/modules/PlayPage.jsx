@@ -7,7 +7,7 @@ export default class PlayPage extends Component {
     var { tileSelected, state, jumbleFn , timeUp } = this.props
     return (
       <div className="d-flex ht-pct-100">
-        <div className="w-50 aligner">
+        <div className="w-50 aligner-center">
             <GameGrid state={state} tileSelected={tileSelected} jumbleFn={jumbleFn} />
         </div>
         <RightPanel state={state} timeUp={timeUp} />

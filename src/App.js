@@ -20,7 +20,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageSelected: 'home',
+      pageSelected: 'gameOver',
       mode: "classic", // modes -> classic,scramble,jumparound
       time: 1,
       grid: 4,
@@ -85,7 +85,7 @@ export default class App extends Component {
     address.push([rowNo, colNo]) // address of the letter is saved
     var stateObj = { address, wordComposed }
 
-    if (wordComposed.length === 1) stateObj.words = allWords[wordComposed] // pick words from indexed file when single letter is clicked
+    if (wordComposed.length === 2) stateObj.words = allWords[wordComposed] // pick words from indexed file when two letterd are clicked
     else if (wordComposed.length >= 3) { // word check begins
       var filteredWords = words.filter(word => { // filter words that don't match composed word pattern
         if (word.length < wordComposed.length) return false // to optimize the filter filter

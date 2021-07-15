@@ -8,7 +8,7 @@ const Footer = () => {
 				<img className="app-logo" src={logo}></img>
 				<div className="v-center" style={{ marginTop: '16px' }}>
 					<div>Built with love using ReactJS</div>
-					<div className="fs-sm">© 2019 Copyright: The Hateful 8</div>
+					<div className="fs-sm">© 2019 Copyright</div>
 				</div>
 			</footer>
 		</div>
